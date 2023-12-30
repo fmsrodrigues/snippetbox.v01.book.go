@@ -3,7 +3,6 @@ package models
 import (
 	"database/sql"
 	"errors"
-	"log"
 	"time"
 )
 
@@ -78,8 +77,6 @@ func (m *SnippetModel) Latest() ([]*Snippet, error) {
 		if err != nil {
 			return nil, err
 		}
-
-		log.Printf("%v", s)
 
 		snippets = append(snippets, s)
 	}
