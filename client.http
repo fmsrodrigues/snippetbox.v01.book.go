@@ -9,19 +9,18 @@ Content-Type: application/json
 ###
 
 # @name view_snippet
-GET {{baseUrl}}/snippet/view?id=1
+GET {{baseUrl}}/snippet/view/1
 Content-Type: application/json
 
 ###
 
 # @name create_snippet
 POST {{baseUrl}}/snippet/create
-Content-Type: application/json
+Content-Type: application/x-www-form-urlencoded
 
-{
-  "title": "Snippet Title",
-  "content": "Snippet Content"
-}
+title="title"
+&content="content"
+&expires=7
 
 ###
 
