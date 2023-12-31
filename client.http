@@ -2,7 +2,7 @@
 
 ###
 
-# @name home
+# @name view_home
 GET {{baseUrl}}
 Content-Type: application/json
 
@@ -24,3 +24,7 @@ Content-Type: application/json
 }
 
 ###
+
+# @name view_create_snippet
+GET {{baseUrl}}/snippet/create
+Content-Type: application/json
